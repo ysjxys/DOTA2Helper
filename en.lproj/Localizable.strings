@@ -1,0 +1,63 @@
+/* 
+  Localizable.strings
+  DOTA2Helper
+
+  Created by ysj on 16/6/2.
+  Copyright © 2016年 yushengjie. All rights reserved.
+*/
+//  NSLocalizedString(@"key", @"")
+
+"matches" = "Matches";
+"friends" = "Friends";
+"account" = "account";
+"matches" = "matches";
+"pleaseInputYourSteamID" = "Please Input Your SteamID";
+"cancel" = "cancel";
+"sure" = "sure";
+"clearCache" = "clear cache:";
+"clearFinished" = "clear finished";
+"accountHide" = "account data is not open";
+"loginOut" = "Login Out";
+"sureToLoginOut" = "Sure To Login Out？";
+"theMatchId" = "matchID:";
+"matchStartTimeTitle" = "start tiime";
+"matchLastTimeTitle" = "last time";
+"firstBloodTimeTitle" = "FB time";
+"matchModeTitle" = "match mode";
+"battleRateTitle" = "battle rate";
+"damageRateTitle" = "damage";
+"heroDamageNumberTtle" = "hero damage";
+"xpm" = "exp per minute";
+"lastHit" = "last hit";
+"denies" = "denies";
+"gpm" = "gold per minute";
+"towerDamage" = "tower damage";
+"heroHealing" = "hero healing";
+"minutes" = "minutes";
+"yearAgo" = "year ago";
+"yearsAgo" = "years ago";
+"monthAgo" = "month ago";
+"monthsAgo" = "months ago";
+"dayAgo" = "day ago";
+"daysAgo" = "days ago";
+"hourAgo" = "hour age";
+"hoursAgo" = "hours age";
+"minuteAgo" = "minute age";
+"minutesAgo" = "minutes age";
+"anonymousPlayer" = "anonymous player";
+"radiant" = "Radiant";
+"dire" = "Dire";
+"win" = "Win";
+"fail" = "Fail";
+"kill" = "Kills";
+"experience" = "Experience";
+"gold" = "Gold";
+"noMoreMatchData" = "No More Match Data";
+"serviceIsBusy" = "service is busy";
+"createAccountTime" = "Create Account Time";
+"lastLoginOffTime" = "Last Login Off Time";
+"friendTime" = "FriendTime";
+"profileurl" = "profileurl";
+"collectPlayer" = "collect player";
+"cancelCollectPlayer" = "cancel collect player";
+

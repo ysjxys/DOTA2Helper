@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  DOTA2Helper
+
+  Created by ysj on 16/6/2.
+  Copyright © 2016年 yushengjie. All rights reserved.
+*/
+"matches" = "战绩";
+"friends" = "好友";
+"account" = "账号";
+"matches" = "战绩";
+"pleaseInputYourSteamID" = "请输入SteamId";
+"cancel" = "取消";
+"sure" = "确定";
+"clearCache" = "清理缓存:";
+"clearFinished" = "清理完毕";
+"accountHide" = "账号资料未公开";
+"loginOut" = "注销";
+"sureToLoginOut" = "确定要注销吗？";
+"theMatchId" = "比赛:";
+"matchStartTimeTitle" = "结束时间";
+"matchLastTimeTitle" = "持续时间";
+"firstBloodTimeTitle" = "一血时间";
+"matchModeTitle" = "比赛模式";
+"battleRateTitle" = "参战率";
+"damageRateTitle" = "伤害";
+"heroDamageNumberTtle" = "英雄伤害";
+"xpm" = "每分钟经验";
+"lastHit" = "正补";
+"denies" = "反补";
+"gpm" = "每分钟金钱";
+"towerDamage" = "建筑伤害";
+"heroHealing" = "英雄治疗";
+"minutes" = "分钟";
+"yearAgo" = "年前";
+"yearsAgo" = "年前";
+"monthAgo" = "月前";
+"monthsAgo" = "月前";
+"dayAgo" = "天前";
+"daysAgo" = "天前";
+"hourAgo" = "小时前";
+"hoursAgo" = "小时前";
+"minuteAgo" = "分钟前";
+"minutesAgo" = "分钟前";
+"anonymousPlayer" = "匿名玩家";
+"radiant" = "天辉";
+"dire" = "夜魇";
+"win" = "胜利";
+"fail" = "失败";
+"kill" = "杀敌";
+"experience" = "经验";
+"gold" = "金钱";
+"noMoreMatchData" = "没有更多比赛数据了";
+"serviceIsBusy" = "服务器繁忙";
+"createAccountTime" = "账号创建时间";
+"lastLoginOffTime" = "上次在线时间";
+"friendTime" = "成为好友时间";
+"profileurl" = "个人主页";
+"collectPlayer" = "收藏玩家";
+"cancelCollectPlayer" = "取消收藏玩家";

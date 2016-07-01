@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  DOTA2Helper
+
+  Created by ysj on 16/6/2.
+  Copyright © 2016年 yushengjie. All rights reserved.
+*/
+
+CFBundleDisplayName = "战绩助手";

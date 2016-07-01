@@ -1,0 +1,58 @@
+//
+//  YSJ.pch
+//  ysjLib
+//
+//  Created by ysj on 16/2/2.
+//  Copyright © 2016年 Harry. All rights reserved.
+//
+
+#ifndef YSJ_pch
+#define YSJ_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* YSJ_pch */
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+//当前设备宽度
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+//当前设备高度
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+//tabbar默认高度
+#define TabBarHeight 49
+//顶部状态栏高度
+#define StatusBarHeight 20
+//navigationBar高度
+#define NavigationBarHeight 44
+//颜色设置
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+//自定义输出
+#define YSJLog(...) //NSLog(__VA_ARGS__)
+//判断是否ios8及以后系统
+#define iOS8 [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
+
+#define Key(...) NSLocalizedString(__VA_ARGS__, @"")
+
+#define HeroImgUrlStr(...) [NSString stringWithFormat:@"http://cdn.dota2.com/apps/dota2/images/heroes/%@_full.png",[__VA_ARGS__ stringByReplacingOccurrencesOfString:@"npc_dota_hero_" withString:@""]]
+
+#define ItemImgUrlStr(...) [NSString stringWithFormat:@"http://cdn.dota2.com/apps/dota2/images/items/%@_lg.png",[__VA_ARGS__ stringByReplacingOccurrencesOfString:@"item_" withString:@""]]
+
+#define SteamAPIKey @"6723E754B82FA1A60514F5A5335F261D"
+#define SteamParamLanguage @"zh_CN"
+#define SteamParamStartAtMatchId @"start_at_match_id"
+#define UMSocialAPPKey @"577079dae0f55a497f00268e"
+
+#define Steam32BitAnonymousID 4294967295 
+#define Steam64BitCalculateConstant 76561197960265728
+#define UserDefaultKeySteamID64Bit @"steamID64bit"
+#define UserDefaultKeySteamID32Bit @"steamID32bit"
+
+#define LovePlayerKeyUserHeadImgUrl @"LovePlayerKeyUserHeadImgUrl"
+#define LovePlayerKeyUserName @"LovePlayerKeyUserName"
+#define LovePlayerKeySteamID64Bit @"LoverPlayerKeySteamID64bit"
+#define LovePlayerKeySteamID32Bit @"LovePlayerKeySteamID32Bit"
+

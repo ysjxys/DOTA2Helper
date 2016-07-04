@@ -118,12 +118,12 @@
     
     if (playerItem.isRadiant) {
         //参战率
-        self.battleRateLabel.text = [NSString stringWithFormat:@"%@:%.1f%%",Key(@"battleRateTitle"), 100*([playerItem.kills floatValue]+[playerItem.assists floatValue])/self.matchSummary.radiantKillCount];
+        self.battleRateLabel.text = [NSString stringWithFormat:@"%@:%.1f%%",Key(@"battleRateTitle"), 100*([playerItem.kills floatValue]+[playerItem.assists floatValue])/self.matchSummary.direDeathCount];
         //英雄伤害百分比
         self.damageLabel.text = [NSString stringWithFormat:@"%@:%.1f%%",Key(@"damageRateTitle"), 100*[playerItem.heroDamage floatValue]/_matchSummary.radiantHeroDamage];
     }else{
         //参战率
-        self.battleRateLabel.text = [NSString stringWithFormat:@"%@:%.1f%%",Key(@"battleRateTitle"), 100*([playerItem.kills floatValue]+[playerItem.assists floatValue])/self.matchSummary.direKillCount];
+        self.battleRateLabel.text = [NSString stringWithFormat:@"%@:%.1f%%",Key(@"battleRateTitle"), 100*([playerItem.kills floatValue]+[playerItem.assists floatValue])/self.matchSummary.radiantDeathCount];
         //英雄伤害百分比
         self.damageLabel.text = [NSString stringWithFormat:@"%@:%.1f%%",Key(@"damageRateTitle"), 100*[playerItem.heroDamage floatValue]/_matchSummary.direHeroDamage];
     }

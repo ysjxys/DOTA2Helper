@@ -126,6 +126,8 @@
         int direExpCount = 0;
         int radiantGoldCount = 0;
         int direGoldCount = 0;
+        int radiantDeathCount = 0;
+        int direDeathCount = 0;
         for (int i = 0; i < tempArr.count; i++) {
             MatchPlayerItem *item = [MatchPlayerItem playerItemWithDic:tempArr[i]];
             if (i < 5) {
@@ -135,6 +137,7 @@
                 radiantDamage = radiantDamage + [item.heroDamage intValue];
                 radiantExpCount = radiantExpCount + [item.xpm intValue];
                 radiantGoldCount = radiantGoldCount + [item.gpm intValue];
+                radiantDeathCount = radiantDeathCount +[item.deaths intValue];
             }else{
                 item.isRadiant = NO;
                 [playsArrD addObject:item];
@@ -142,6 +145,7 @@
                 direDamage = direDamage +[item.heroDamage intValue];
                 direExpCount = direExpCount + [item.xpm intValue];
                 direGoldCount = direGoldCount + [item.gpm intValue];
+                direDeathCount = direDeathCount + [item.deaths intValue];
             }
         }
         
@@ -156,6 +160,8 @@
         self.matchSummary.direExpCount = direExpCount;
         self.matchSummary.radiantGoldCount = radiantGoldCount;
         self.matchSummary.direGoldCount = direGoldCount;
+        self.matchSummary.radiantDeathCount = radiantDeathCount;
+        self.matchSummary.direDeathCount = direDeathCount;
         
         YSJTableViewCellGroup *groupR = self.dataArr[0];
         groupR.itemArr = [playsArrR copy];

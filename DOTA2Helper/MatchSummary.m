@@ -35,8 +35,12 @@
             int matchMode = [dic[@"game_mode"] intValue];
             if (matchMode == 1) {
                 self.gameMode = @"全阵营选择";
+            }else if (matchMode == 2){
+                self.gameMode = @"队长模式";
             }else if (matchMode == 3){
                 self.gameMode = @"随机征召";
+            }else if (matchMode == 4){
+                self.gameMode = @"个别征召";
             }else if (matchMode == 22){
                 self.gameMode = @"天梯匹配";
             }else{

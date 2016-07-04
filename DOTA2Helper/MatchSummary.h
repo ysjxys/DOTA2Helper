@@ -27,6 +27,8 @@
 @property (nonatomic, assign) int direExpCount;
 @property (nonatomic, assign) int radiantGoldCount;
 @property (nonatomic, assign) int direGoldCount;
+@property (nonatomic, assign) int radiantDeathCount;
+@property (nonatomic, assign) int direDeathCount;
 
 - (instancetype)initWithDic:(NSDictionary *)dic;
 + (instancetype)summaryWithDic:(NSDictionary *)dic;

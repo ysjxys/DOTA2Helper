@@ -268,6 +268,10 @@
 
 - (void)loadMatchHistory{
     [YSJWebService requestTarget:self withUrl:@"http://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v1" isPost:NO parameters:self.paramMatch complete:^(id response) {
+        if ([response[@"result"][@"status"] isEqualToNumber:@15]) {
+            [self endGetDataWithTitle:Key(@"matchIsNotOpen")];
+            return;
+        }
         NSMutableArray *arr = [response[@"result"][@"matches"] mutableCopy];
         
         NSMutableArray *tempArr = [NSMutableArray array];
@@ -286,8 +290,7 @@
             }
         }
         if (arr.count == 0) {
-            [self showHudWithTitle:Key(@"noMoreMatchData")];
-            [self endGetDataWithTitle:nil];
+            [self endGetDataWithTitle:Key(@"noMoreMatchData")];
             return;
         }
         YSJTableViewCellGroup *groupMatch = self.dataArr[1];

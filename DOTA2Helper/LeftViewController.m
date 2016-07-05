@@ -83,6 +83,8 @@
     item11.selectedOption = ^{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:Key(@"pleaseInputYourSteamID") delegate:self cancelButtonTitle:Key(@"cancel") otherButtonTitles:Key(@"sure"), nil];
         alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+        UITextField *tf = [alert textFieldAtIndex:0];
+        tf.keyboardType = UIKeyboardTypeNumberPad;
         alert.tag = 0;
         [alert show];
     };

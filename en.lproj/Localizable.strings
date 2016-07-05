@@ -60,4 +60,4 @@
 "profileurl" = "profileurl";
 "collectPlayer" = "collect player";
 "cancelCollectPlayer" = "cancel collect player";
-
+"matchIsNotOpen" = "matchIsNotOpen";

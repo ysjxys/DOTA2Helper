@@ -37,6 +37,9 @@
 - (void)loadData{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *steamID64bit = [userDefault objectForKey:UserDefaultKeySteamID64Bit];
+    if (!steamID64bit) {
+        return;
+    }
     NSDictionary *paramFriends = @{@"key":SteamAPIKey,@"steamid":steamID64bit,@"relationship":@"friend"};
     [YSJWebService requestTarget:self withUrl:@"http://api.steampowered.com/ISteamUser/GetFriendList/v0001/" isPost:NO parameters:paramFriends complete:^(id response) {
         NSMutableArray *tempArr = [response[@"friendslist"][@"friends"] mutableCopy];

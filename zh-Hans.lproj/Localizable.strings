@@ -58,3 +58,4 @@
 "profileurl" = "个人主页";
 "collectPlayer" = "收藏玩家";
 "cancelCollectPlayer" = "取消收藏玩家";
+"matchIsNotOpen" = "该玩家未公开战绩";

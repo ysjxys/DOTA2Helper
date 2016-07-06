@@ -24,7 +24,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-DOTA2Helper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,12 +47,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>156791D23BC9B4B417FC542B984FCA2B</key>
+		<key>44334717738210BAE59FBAFCD15D5371</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5CD417A6871A8D47330E7204DF8A8A10</key>
+		<key>6CAADA4E5F150FF29E8BB1D2447ED7CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70317FFC5A871A4678677348016BA6E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,17 +72,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9B5606C41B2362FBCC8861580AAE99A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BB9B087F5FC93C25B97E06F06EA0E02F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BD4C4A2CFAC580D526B76F0E9E6C3E08</key>
 		<dict>
 			<key>primary</key>
 			<true/>

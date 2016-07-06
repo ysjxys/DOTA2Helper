@@ -20,8 +20,9 @@
 #import "TeamHeaderView.h"
 #import "AccountViewController.h"
 #import "UIBarButtonItem+YSJ.h"
+#import "UMSocial.h"
 
-@interface MatchDetailViewController()<UITableViewDelegate,UITableViewDataSource,PlayerDetailTableViewCellDelegate>
+@interface MatchDetailViewController()<UITableViewDelegate,UITableViewDataSource,PlayerDetailTableViewCellDelegate,UMSocialUIDelegate>
 
 @property (nonatomic, copy) NSString *matchId;
 
@@ -212,7 +213,7 @@
 }
 
 - (void)initViews{
-//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"Share"] edgeInsets:UIEdgeInsetsZero bounds:CGRectMake(0, 0, 24, 24) higlightedImage:[UIImage imageNamed:@"Share"] target:self action:@selector(shareBtnClicked)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"Share"] edgeInsets:UIEdgeInsetsZero bounds:CGRectMake(0, 0, 24, 24) higlightedImage:[UIImage imageNamed:@"Share"] target:self action:@selector(shareBtnClicked)];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -225,8 +226,18 @@
     self.matchModeTitleLabel.text = Key(@"matchModeTitle");
 }
 
+//@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
 - (void)shareBtnClicked{
+    [UMSocialData defaultData].extConfig.title = @"战绩助手";
+    [UMSocialData defaultData].extConfig.wechatSessionData.url = [NSString stringWithFormat:@"http://api.maxjia.com/api/match/detail/shared/?match_id=%@&from=singlemessage&isappinstalled=1",self.matchId];
+//    [UMSocialData defaultData].extConfig.qqData.url = @"http://baidu.com";
     
+    [UMSocialSnsService presentSnsIconSheetView:self
+                                         appKey:UMSocialAPPKey
+                                      shareText:@"我在Dota2中取得了辉煌的战绩，快来瞅瞅呀~"
+                                     shareImage:[UIImage imageNamed:@"Icon"]
+                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToQzone,UMShareToSina]
+                                       delegate:self];
 }
 
 #pragma mark - PlayerDetailTableViewCellDelegate

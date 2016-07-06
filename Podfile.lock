@@ -23,6 +23,7 @@ PODS:
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
+  - UMengSocialCOM (5.2.1)
   - ViewDeck (2.4.2)
 
 DEPENDENCIES:
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1)
   - Reachability (~> 3.1.1)
   - SDWebImage (~> 3.7.6)
+  - UMengSocialCOM (~> 5.2.1)
   - ViewDeck (~> 2.4)
 
 SPEC CHECKSUMS:
@@ -41,6 +43,9 @@ SPEC CHECKSUMS:
   MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
   ViewDeck: 0b7b83bc2782a20dfb76207d0a2e8c5e6a6d182d
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 686a60f21dbdb37e68f0e3a6b07312844a12aa65
+
+COCOAPODS: 1.0.1

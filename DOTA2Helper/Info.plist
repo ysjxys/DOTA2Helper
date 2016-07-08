@@ -37,7 +37,7 @@
 			<string>QQ</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tencent1128292202</string>
+				<string>QQ41e3d129</string>
 			</array>
 		</dict>
 		<dict>
@@ -45,12 +45,42 @@
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>sina</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb2234141262</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>qqZone</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tencent1105449257</string>
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>weibosdk</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>mqzone</string>
+		<string>sinaweibo</string>
+		<string>alipayauth</string>
+		<string>alipay</string>
+		<string>safepay</string>
+		<string>mqqopensdkapiV3</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqapiwallet</string>
+		<string>mqqwpa</string>
+		<string>mqqbrowser</string>
+		<string>wechat</string>
+		<string>mqqapi</string>
+		<string>mqq</string>
+		<string>qqZone</string>
 		<string>sina</string>
 		<string>QQ</string>
 		<string>weixin</string>

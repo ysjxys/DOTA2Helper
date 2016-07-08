@@ -240,6 +240,14 @@
                                        delegate:self];
 }
 
+-(void)didSelectSocialPlatform:(NSString *)platformName withSocialData:(UMSocialData *)socialData{
+    
+    UIImage *newImage = [UIImage captureWithView:self.view];
+    socialData.shareImage = newImage;
+    
+//    socialData.shareImage = [UIImage imageNamed:@"placeholder image"];
+}
+
 #pragma mark - PlayerDetailTableViewCellDelegate
 - (void)playerHeadSelected:(AccountItem *)accountItem{
     AccountViewController *accountVC = [[AccountViewController alloc]initWithAccountItem:accountItem shouldShowMatches:YES];

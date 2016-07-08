@@ -24,4 +24,11 @@
  *  @return 裁剪后的图片
  */
 - (UIImage *)circleImage;
+
+/**
+ *  截取view为图片
+ *
+ *  @return 截取后的图片
+ */
++ (instancetype)captureWithView:(UIView *)view;
 @end

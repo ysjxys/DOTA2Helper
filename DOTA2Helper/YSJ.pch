@@ -45,6 +45,13 @@
 #define SteamParamLanguage @"zh_CN"
 #define SteamParamStartAtMatchId @"start_at_match_id"
 #define UMSocialAPPKey @"577079dae0f55a497f00268e"
+#define WeChatAppId @"wxf5617cbf0a6d7083"
+#define WeChatAppSecret @"d867c81c9d8878b02bb07e56598a32d2"
+#define SinaAppKey @"2234141262"
+#define SinaSecret @"7c217280360d4ce7465247038546de9a"
+#define QQAppId @"1105449257"
+#define QQAppKey @"C912cmSbKQIkXpKh"
+
 
 #define Steam32BitAnonymousID 4294967295 
 #define Steam64BitCalculateConstant 76561197960265728

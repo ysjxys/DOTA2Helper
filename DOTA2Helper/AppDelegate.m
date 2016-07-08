@@ -81,12 +81,24 @@
 - (void)UMSocialSetting{
     //设置友盟社会化组件appkey
     [UMSocialData setAppKey:UMSocialAPPKey];
+    
     //设置微信AppId、appSecret，分享url
-    [UMSocialWechatHandler setWXAppId:@"wxf5617cbf0a6d7083" appSecret:@"d867c81c9d8878b02bb07e56598a32d2" url:@"http://www.baidu.com"];
+    [UMSocialWechatHandler setWXAppId:WeChatAppId appSecret:WeChatAppSecret url:@"http://www.baidu.com"];
+    [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeImage;//微信朋友圈分享类型（纯图片）
+    
     //设置手机QQ 的AppId，Appkey，和分享URL，需要#import "UMSocialQQHandler.h"
-    [UMSocialQQHandler setQQWithAppId:@"1128292202" appKey:@"C912cmSbKQIkXpKh" url:@"http://www.baidu.com"];
+    [UMSocialQQHandler setQQWithAppId:QQAppId appKey:QQAppKey url:@"http://www.baidu.com"];
+    
     //打开新浪微博的SSO开关，设置新浪微博回调地址，这里必须要和你在新浪微博后台设置的回调地址一致。需要 #import "UMSocialSinaSSOHandler.h"
-    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"" secret:@"" RedirectURL:@"http://www.baidu.com"];
+    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:SinaAppKey secret:SinaSecret RedirectURL:@"http://www.baidu.com"];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    BOOL result = [UMSocialSnsService handleOpenURL:url];
+    if (result == FALSE) {
+        //调用其他SDK，例如支付宝SDK等
+    }
+    return result;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
